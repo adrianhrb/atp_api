@@ -3,8 +3,8 @@ from rest_framework import routers
 
 from . import views
 
-app_name = 'api_players'
+app_name = 'api_matches'
 router = routers.DefaultRouter()
-router.register('players', views.PlayerViewSet)
+router.register('matches', views.MatchViewSet)
 
 urlpatterns = [path('', include(router.urls))]
