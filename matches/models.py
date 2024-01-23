@@ -4,7 +4,6 @@ from players.models import Player
 
 
 class Match(models.Model):
-    match_id = models.CharField(max_length=255)
     tournament = models.CharField(max_length=255)
     date = models.DateField()
     round = models.CharField(max_length=255)
@@ -16,5 +15,3 @@ class Match(models.Model):
         Player, related_name='lost_matches', on_delete=models.CASCADE, blank=True, null=True
     )
 
-    def __str__(self) -> str:
-        return self.match_id

@@ -7,7 +7,6 @@ class Hand(models.TextChoices):
 
 
 class Player(models.Model):
-    player_id = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     hand = models.CharField(choices=Hand, max_length=1)
     country = models.CharField(max_length=3)

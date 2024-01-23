@@ -13,6 +13,6 @@ class MatchViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Match.objects.all()
     serializer_class = MatchSerializer
 
-class MatchWinnerView(APIView):
-    def get(self, request, pk, format=None):
-        winer = 
+# class MatchWinnerView(APIView):
+#     def get(self, request, pk, format=None):
+#         winer = 
