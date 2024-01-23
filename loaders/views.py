@@ -1,3 +1,4 @@
+from django.contrib.admin.views.decorators import staff_member_required
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -5,6 +6,7 @@ from .forms import FileLoaderForm
 from .utils import assign_winners_and_losers, load_database_data
 
 
+@staff_member_required
 def load_data(request):
     if request.method == 'POST':
         form = FileLoaderForm(files=request.FILES)
