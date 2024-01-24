@@ -1,4 +1,4 @@
-# Atp tennis api 🎾
+# Atp tennis API REST 🎾
 
 A dedicated to build a simple api around some tennis information. 
 <div style='width:520px'>
