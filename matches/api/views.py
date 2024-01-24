@@ -32,5 +32,7 @@ class MatchLoserView(APIView):
         match = self.queryset.get(pk=pk)
         player = get_object_or_404(Player, id=match.loser.id)
         serializer = PlayerSerializer(player)
-        return Response(serializer.data)
+        return Response(serializer.data)    
     
+
+# {'rol': 'user', 'content': 'message'}

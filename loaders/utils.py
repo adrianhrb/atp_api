@@ -23,7 +23,7 @@ def load_players(file):
             country=row['country'],
             birthdate=date,
         )
-        r.set(row['player_id'], new_player.id)
+        r.set(row['player_id'], new_player.id) 
         new_player.save
         
 def load_matches(file):
