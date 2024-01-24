@@ -3,4 +3,3 @@
 db.sqlite3
 api_data/
 __pycache__
-.gitignore
