@@ -35,4 +35,3 @@ class MatchLoserView(APIView):
         return Response(serializer.data)    
     
 
-# {'rol': 'user', 'content': 'message'}

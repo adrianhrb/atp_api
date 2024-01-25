@@ -15,3 +15,5 @@ class Match(models.Model):
         Player, related_name='lost_matches', on_delete=models.CASCADE, blank=True, null=True
     )
 
+    def __str__(self) -> str:
+        return f'{self.tournament}, {self.date}'
